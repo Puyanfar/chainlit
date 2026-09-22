@@ -4,6 +4,7 @@ import { de } from 'date-fns/locale/de';
 import { el } from 'date-fns/locale/el';
 import { enUS } from 'date-fns/locale/en-US';
 import { es } from 'date-fns/locale/es';
+import { faIR } from 'date-fns/locale/fa-IR';
 import { fr } from 'date-fns/locale/fr';
 import { gu } from 'date-fns/locale/gu';
 import { he } from 'date-fns/locale/he';
@@ -23,7 +24,7 @@ import { zhTW } from 'date-fns/locale/zh-TW';
  * This ensures date formatting aligns with the application's language settings.
  *
  * Locale codes match the translation files in backend/chainlit/translations:
- * - bn.json, de-DE.json, el-GR.json, en-US.json, es.json, fr-FR.json, gu.json,
+ * - bn.json, de-DE.json, el-GR.json, en-US.json, es.json, fa.json, fr-FR.json, gu.json,
  * - he-IL.json, hi.json, it.json, ja.json, kn.json, ko.json, ml.json, mr.json,
  * - nl.json, ta.json, te.json, zh-CN.json, zh-TW.json
  */
@@ -45,6 +46,10 @@ const localeMap: Record<string, Locale> = {
 
   // Spanish (es.json)
   es: es,
+
+  // Persian (fa.json)
+  'fa-IR': faIR,
+  fa: faIR,
 
   // French (fr-FR.json)
   'fr-FR': fr,
